@@ -15,7 +15,7 @@ Zynq7020 + AD9361 无线收发模块，TCXO时钟，512MB 1066Mbps DDR3内存，
 下方排线可以连接MIPI CSI2协议的摄像头，最多4lane，测试时使用了树莓派imx708。
 本模块为收发一体，前端可时分复用收发，摄像头接口如有转接板也可连接屏幕，同一个模块可做接收端。
 
-使用AD绘制，嘉立创六层沉金工艺，本链接的价格提供整个PCB硬件工程。包括原理图，PCB文件，3D模型文件。
+使用AD绘制。
 
 ---
 
@@ -34,4 +34,4 @@ The upper ribbon cable exposes JTAG, serial port, and some IO pins — useful fo
 The lower ribbon cable can connect cameras using the MIPI CSI2 protocol, up to 4 lanes; a Raspberry Pi IMX708 camera was used during testing.
 This module is a transceiver in one unit; the front end supports time-division multiplexing for transmit/receive. With an adapter board, the camera interface can also connect a display, and the same module can serve as the receiver.
 
-Designed using Altium Designer, manufactured with JLCPCB 6-layer ENIG process. The price on this listing provides the complete PCB hardware project, including schematics, PCB files, and 3D model files.
+Designed using Altium Designer, manufactured with JLCPCB 6-layer ENIG process.
