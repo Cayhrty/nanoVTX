@@ -17,6 +17,8 @@ Zynq7020 + AD9361 无线收发模块，TCXO时钟，512MB 1066Mbps DDR3内存，
 
 使用AD绘制。
 
+Demo文件夹中为vivado工程+vitis工程
+
 ---
 
 ## English Version
@@ -35,3 +37,4 @@ The lower ribbon cable can connect cameras using the MIPI CSI2 protocol, up to 4
 This module is a transceiver in one unit; the front end supports time-division multiplexing for transmit/receive. With an adapter board, the camera interface can also connect a display, and the same module can serve as the receiver.
 
 Designed using Altium Designer, manufactured with JLCPCB 6-layer ENIG process.
+Demo folder is vivado&vitis projects
