@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Sep 22 20:53:57 2023
+# Process ID: 9292
+# Current directory: C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_4_0_synth_1
+# Command line: vivado.exe -log top_ila_4_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_ila_4_0.tcl
+# Log file: C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_4_0_synth_1/top_ila_4_0.vds
+# Journal file: C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_4_0_synth_1\vivado.jou
+# Running On: DESKTOP-EV5Q276, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 68466 MB
+#-----------------------------------------------------------
+source top_ila_4_0.tcl -notrace
