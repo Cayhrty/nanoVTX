@@ -1,0 +1,985 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Sep 26 21:52:16 2023
+# Process ID: 31028
+# Current directory: C:/FPGA/NanoVTX/NanoVTX.runs/synth_1
+# Command line: vivado.exe -log top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+# Log file: C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/top_wrapper.vds
+# Journal file: C:/FPGA/NanoVTX/NanoVTX.runs/synth_1\vivado.jou
+# Running On: DESKTOP-EV5Q276, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 68466 MB
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/axi_register_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 611.164 ; gain = 103.109
+Command: read_checkpoint -auto_incremental -incremental C:/FPGA/NanoVTX/NanoVTX.srcs/utils_1/imports/synth_1/top_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/FPGA/NanoVTX/NanoVTX.srcs/utils_1/imports/synth_1/top_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_wrapper -part xc7z010clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30048
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1413.227 ; gain = 411.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_wrapper' [C:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/hdl/top_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6157] synthesizing module 'top' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1859]
+INFO: [Synth 8-6157] synthesizing module 'top_SampleControl_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_SampleControl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_SampleControl_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_SampleControl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_dma_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_dma_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'top_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2177]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'top_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2177]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'top_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2177]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'top_axi_dma_0_0' has 43 connections declared, but only 40 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2177]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_mem_intercon_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2698]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_OK9T26' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1609]
+INFO: [Synth 8-6157] synthesizing module 'top_auto_pc_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_auto_pc_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_auto_us_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_auto_us_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_OK9T26' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1609]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_mem_intercon_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2698]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_register_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_axi_register_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_register_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_axi_register_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'axi_wreg2' of module 'top_axi_register_0_0' is unconnected for instance 'axi_register_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2259]
+WARNING: [Synth 8-7071] port 'axi_wreg3' of module 'top_axi_register_0_0' is unconnected for instance 'axi_register_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2259]
+WARNING: [Synth 8-7023] instance 'axi_register_0' of module 'top_axi_register_0_0' has 29 connections declared, but only 27 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2259]
+INFO: [Synth 8-6157] synthesizing module 'top_blk_mem_gen_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_blk_mem_gen_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconstant_3_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_3_0/synth/top_xlconstant_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconstant_3_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_3_0/synth/top_xlconstant_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconstant_0_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_0_0/synth/top_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconstant_0_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_0_0/synth/top_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_fake_data_src_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fake_data_src_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_fake_data_src_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fake_data_src_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_fft_config_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fft_config_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_fft_config_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fft_config_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_fft_tdata_slice_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fft_tdata_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_fft_tdata_slice_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fft_tdata_slice_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_fifo_generator_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fifo_generator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_fifo_generator_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fifo_generator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_fifo_generator_1_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fifo_generator_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_fifo_generator_1_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_fifo_generator_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'empty' of module 'top_fifo_generator_1_0' is unconnected for instance 'fifo_generator_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2323]
+WARNING: [Synth 8-7023] instance 'fifo_generator_1' of module 'top_fifo_generator_1_0' has 10 connections declared, but only 9 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2323]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2333]
+INFO: [Synth 8-6157] synthesizing module 'top_ila_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ila_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2338]
+INFO: [Synth 8-6157] synthesizing module 'top_ila_1_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ila_1_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2343]
+INFO: [Synth 8-6157] synthesizing module 'top_ila_2_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ila_2_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_2_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2346]
+INFO: [Synth 8-6157] synthesizing module 'top_ila_3_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ila_3_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_3_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2350]
+INFO: [Synth 8-6157] synthesizing module 'top_ila_4_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ila_4_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_4_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2356]
+INFO: [Synth 8-6157] synthesizing module 'top_ila_5_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ila_5_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_ila_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_mipi_csi2_rx_subsyst_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_mipi_csi2_rx_subsyst_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_mipi_csi2_rx_subsyst_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_mipi_csi2_rx_subsyst_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rxbyteclkhs' of module 'top_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2362]
+WARNING: [Synth 8-7071] port 'system_rst_out' of module 'top_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2362]
+WARNING: [Synth 8-7071] port 'csirxss_csi_irq' of module 'top_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2362]
+WARNING: [Synth 8-7071] port 'video_out_tkeep' of module 'top_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2362]
+WARNING: [Synth 8-7023] instance 'mipi_csi2_rx_subsyst_0' of module 'top_mipi_csi2_rx_subsyst_0_0' has 42 connections declared, but only 38 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2362]
+INFO: [Synth 8-6157] synthesizing module 'top_output_mux_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_output_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_output_mux_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_output_mux_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fifo_data_out' of module 'top_output_mux_0_0' is unconnected for instance 'output_mux_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2401]
+WARNING: [Synth 8-7023] instance 'output_mux_0' of module 'top_output_mux_0_0' has 11 connections declared, but only 10 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2401]
+INFO: [Synth 8-6157] synthesizing module 'top_processing_system7_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_processing_system7_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'GPIO_T' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_SCLK_T' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_MOSI_T' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_MISO_O' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_MISO_T' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_SS1_O' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_SS2_O' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'SPI0_SS_T' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARREADY' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RLAST' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RVALID' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RDATA' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'FCLK_CLK2' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_CAS_n' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_CKE' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_Clk_n' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_Clk' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_CS_n' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_DRSTB' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_ODT' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_RAS_n' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_WEB' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_BankAddr' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_Addr' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_DM' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_DQ' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_DQS_n' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7071] port 'DDR_DQS' of module 'top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'top_processing_system7_0_0' has 132 connections declared, but only 97 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2412]
+INFO: [Synth 8-6157] synthesizing module 'top_ps7_0_axi_periph_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2898]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1RYU2JE' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'top_auto_pc_1' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_auto_pc_1' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'top_auto_pc_1' is unconnected for instance 'auto_pc' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:248]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'top_auto_pc_1' is unconnected for instance 'auto_pc' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:248]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'top_auto_pc_1' is unconnected for instance 'auto_pc' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:248]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'top_auto_pc_1' has 60 connections declared, but only 57 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:248]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1RYU2JE' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_GEI6LB' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:308]
+INFO: [Synth 8-6157] synthesizing module 'top_auto_pc_2' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_auto_pc_2' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_GEI6LB' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:308]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_11EWEFL' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:618]
+INFO: [Synth 8-6157] synthesizing module 'top_auto_pc_3' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_auto_pc_3' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_11EWEFL' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:618]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_PBIRH0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:928]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_PBIRH0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:928]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_M354KG' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1214]
+INFO: [Synth 8-6157] synthesizing module 'top_auto_pc_4' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_auto_pc_4' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'top_auto_pc_4' is unconnected for instance 'auto_pc' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1529]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'top_auto_pc_4' is unconnected for instance 'auto_pc' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1529]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'top_auto_pc_4' has 79 connections declared, but only 77 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1529]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_M354KG' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1214]
+INFO: [Synth 8-6157] synthesizing module 'top_xbar_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_xbar_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_ps7_0_axi_periph_1' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2898]
+WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arburst' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arcache' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arid' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arlen' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arlock' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arqos' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arregion' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arsize' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awburst' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awcache' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awid' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awlen' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awlock' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awqos' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awregion' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awsize' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_wlast' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'top_ps7_0_axi_periph_1' is unconnected for instance 'ps7_0_axi_periph' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'top_ps7_0_axi_periph_1' has 143 connections declared, but only 115 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2510]
+INFO: [Synth 8-6157] synthesizing module 'top_rst_ps7_0_50M_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_rst_ps7_0_50M_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'top_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2626]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'top_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2626]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'top_rst_ps7_0_50M_0' has 10 connections declared, but only 8 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2626]
+INFO: [Synth 8-6157] synthesizing module 'top_tlast_gen_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_tlast_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_tlast_gen_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_tlast_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_util_vector_logic_0_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_util_vector_logic_0_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_util_vector_logic_1_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_util_vector_logic_1_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_util_vector_logic_2_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_util_vector_logic_2_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_util_vector_logic_3_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_util_vector_logic_3_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_util_vector_logic_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_xfft_1_0' [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_xfft_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_xfft_1_0' (0#1) [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/.Xil/Vivado-31028-DESKTOP-EV5Q276/realtime/top_xfft_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_data_tuser' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'm_axis_data_tlast' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'm_axis_status_tdata' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'm_axis_status_tvalid' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'event_frame_started' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'event_tlast_unexpected' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'event_tlast_missing' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'event_status_channel_halt' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'event_data_in_channel_halt' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7071] port 'event_data_out_channel_halt' of module 'top_xfft_1_0' is unconnected for instance 'xfft_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+WARNING: [Synth 8-7023] instance 'xfft_1' of module 'top_xfft_1_0' has 23 connections declared, but only 13 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconcat_0_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconcat_0_0/synth/top_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconcat_0_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconcat_0_0/synth/top_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconcat_1_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconcat_1_0/synth/top_xlconcat_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconcat_1_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconcat_1_0/synth/top_xlconcat_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconstant_0_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_0_1/synth/top_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconstant_0_1' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_0_1/synth/top_xlconstant_0_1.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconstant_1_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_1_0/synth/top_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconstant_1_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_1_0/synth/top_xlconstant_1_0.v:53]
+WARNING: [Synth 8-7071] port 'dout' of module 'top_xlconstant_1_0' is unconnected for instance 'xlconstant_1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2678]
+WARNING: [Synth 8-7023] instance 'xlconstant_1' of module 'top_xlconstant_1_0' has 1 connections declared, but only 0 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'top_xlconstant_2_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_2_0/synth/top_xlconstant_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlconstant_2_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlconstant_2_0/synth/top_xlconstant_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlslice_0_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_0_0/synth/top_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlslice_0_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_0_0/synth/top_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlslice_1_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_1_0/synth/top_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlslice_1_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_1_0/synth/top_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlslice_2_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_2_0/synth/top_xlslice_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlslice_2_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_2_0/synth/top_xlslice_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_xlslice_4_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_4_0/synth/top_xlslice_4_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlslice_4_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_4_0/synth/top_xlslice_4_0.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2694]
+INFO: [Synth 8-6157] synthesizing module 'top_xlslice_5_0' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_5_0/synth/top_xlslice_5_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_xlslice_5_0' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xlslice_5_0/synth/top_xlslice_5_0.v:53]
+WARNING: [Synth 8-7071] port 'Dout' of module 'top_xlslice_5_0' is unconnected for instance 'xlslice_5' [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2694]
+WARNING: [Synth 8-7023] instance 'xlslice_5' of module 'top_xlslice_5_0' has 2 connections declared, but only 1 given [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2694]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:1859]
+INFO: [Synth 8-6155] done synthesizing module 'top_wrapper' (0#1) [C:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/hdl/top_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fft_tdata_slice_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2310]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_2'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2688]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2333]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_generator_1'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2323]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xfft_1'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2654]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_3'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2346]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fake_data_src_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2299]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2338]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'output_mux_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2401]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_2'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2343]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_4'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2691]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_4'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2350]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mipi_csi2_rx_subsyst_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2362]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SampleControl_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2171]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_5'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2356]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_generator_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2313]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_0'. This will prevent further optimization [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/synth/top.v:2641]
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[28] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[27] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[26] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[25] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[24] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1519.996 ; gain = 518.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1519.996 ; gain = 518.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1519.996 ; gain = 518.234
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1519.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_axi_dma_0_0/top_axi_dma_0_0/top_axi_dma_0_0_in_context.xdc] for cell 'top_i/axi_dma_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_axi_dma_0_0/top_axi_dma_0_0/top_axi_dma_0_0_in_context.xdc] for cell 'top_i/axi_dma_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0/top_auto_pc_0_in_context.xdc] for cell 'top_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0/top_auto_pc_0_in_context.xdc] for cell 'top_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_us_0/top_auto_us_0/top_auto_us_0_in_context.xdc] for cell 'top_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_us_0/top_auto_us_0/top_auto_us_0_in_context.xdc] for cell 'top_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_axi_register_0_0/top_axi_register_0_0/top_axi_register_0_0_in_context.xdc] for cell 'top_i/axi_register_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_axi_register_0_0/top_axi_register_0_0/top_axi_register_0_0_in_context.xdc] for cell 'top_i/axi_register_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0_in_context.xdc] for cell 'top_i/blk_mem_gen_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0_in_context.xdc] for cell 'top_i/blk_mem_gen_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fake_data_src_0_0/top_fake_data_src_0_0/top_fake_data_src_0_0_in_context.xdc] for cell 'top_i/fake_data_src_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fake_data_src_0_0/top_fake_data_src_0_0/top_fake_data_src_0_0_in_context.xdc] for cell 'top_i/fake_data_src_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fft_config_0_0/top_fft_config_0_0/top_fft_config_0_0_in_context.xdc] for cell 'top_i/fft_config_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fft_config_0_0/top_fft_config_0_0/top_fft_config_0_0_in_context.xdc] for cell 'top_i/fft_config_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fft_tdata_slice_0_0/top_fft_tdata_slice_0_0/top_fft_tdata_slice_0_0_in_context.xdc] for cell 'top_i/fft_tdata_slice_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fft_tdata_slice_0_0/top_fft_tdata_slice_0_0/top_fft_tdata_slice_0_0_in_context.xdc] for cell 'top_i/fft_tdata_slice_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fifo_generator_0_0/top_fifo_generator_0_0/top_fifo_generator_0_0_in_context.xdc] for cell 'top_i/fifo_generator_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fifo_generator_0_0/top_fifo_generator_0_0/top_fifo_generator_0_0_in_context.xdc] for cell 'top_i/fifo_generator_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fifo_generator_1_0/top_fifo_generator_1_0/top_fifo_generator_1_0_in_context.xdc] for cell 'top_i/fifo_generator_1'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_fifo_generator_1_0/top_fifo_generator_1_0/top_fifo_generator_1_0_in_context.xdc] for cell 'top_i/fifo_generator_1'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_0_0/top_ila_0_0/top_ila_0_0_in_context.xdc] for cell 'top_i/ila_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_0_0/top_ila_0_0/top_ila_0_0_in_context.xdc] for cell 'top_i/ila_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_1_0/top_ila_1_0/top_ila_1_0_in_context.xdc] for cell 'top_i/ila_1'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_1_0/top_ila_1_0/top_ila_1_0_in_context.xdc] for cell 'top_i/ila_1'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_2_0/top_ila_2_0/top_ila_2_0_in_context.xdc] for cell 'top_i/ila_2'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_2_0/top_ila_2_0/top_ila_2_0_in_context.xdc] for cell 'top_i/ila_2'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_3_0/top_ila_3_0/top_ila_3_0_in_context.xdc] for cell 'top_i/ila_3'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_3_0/top_ila_3_0/top_ila_3_0_in_context.xdc] for cell 'top_i/ila_3'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_4_0/top_ila_4_0/top_ila_4_0_in_context.xdc] for cell 'top_i/ila_4'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_4_0/top_ila_4_0/top_ila_4_0_in_context.xdc] for cell 'top_i/ila_4'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'top_i/mipi_csi2_rx_subsyst_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'top_i/mipi_csi2_rx_subsyst_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc] for cell 'top_i/processing_system7_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc] for cell 'top_i/processing_system7_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xbar_0/top_xbar_0/top_xbar_0_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xbar_0/top_xbar_0/top_xbar_0_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_4/top_auto_pc_4/top_auto_pc_4_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_4/top_auto_pc_4/top_auto_pc_4_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_1/top_auto_pc_1/top_auto_pc_2_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_1/top_auto_pc_1/top_auto_pc_2_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_2/top_auto_pc_2/top_auto_pc_2_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_2/top_auto_pc_2/top_auto_pc_2_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_3/top_auto_pc_3/top_auto_pc_3_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_auto_pc_3/top_auto_pc_3/top_auto_pc_3_in_context.xdc] for cell 'top_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_rst_ps7_0_50M_0/top_rst_ps7_0_50M_0/top_rst_ps7_0_50M_0_in_context.xdc] for cell 'top_i/rst_ps7_0_50M'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_rst_ps7_0_50M_0/top_rst_ps7_0_50M_0/top_rst_ps7_0_50M_0_in_context.xdc] for cell 'top_i/rst_ps7_0_50M'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_0_0/top_util_vector_logic_0_0/top_util_vector_logic_3_0_in_context.xdc] for cell 'top_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_0_0/top_util_vector_logic_0_0/top_util_vector_logic_3_0_in_context.xdc] for cell 'top_i/util_vector_logic_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_1_0/top_util_vector_logic_1_0/top_util_vector_logic_1_0_in_context.xdc] for cell 'top_i/util_vector_logic_1'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_1_0/top_util_vector_logic_1_0/top_util_vector_logic_1_0_in_context.xdc] for cell 'top_i/util_vector_logic_1'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_2_0/top_util_vector_logic_2_0/top_util_vector_logic_3_0_in_context.xdc] for cell 'top_i/util_vector_logic_2'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_2_0/top_util_vector_logic_2_0/top_util_vector_logic_3_0_in_context.xdc] for cell 'top_i/util_vector_logic_2'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_3_0/top_util_vector_logic_3_0/top_util_vector_logic_3_0_in_context.xdc] for cell 'top_i/util_vector_logic_3'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_util_vector_logic_3_0/top_util_vector_logic_3_0/top_util_vector_logic_3_0_in_context.xdc] for cell 'top_i/util_vector_logic_3'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xfft_1_0/top_xfft_1_0/top_xfft_1_0_in_context.xdc] for cell 'top_i/xfft_1'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_xfft_1_0/top_xfft_1_0/top_xfft_1_0_in_context.xdc] for cell 'top_i/xfft_1'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_tlast_gen_0_0/top_tlast_gen_0_0/top_tlast_gen_0_0_in_context.xdc] for cell 'top_i/tlast_gen_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_tlast_gen_0_0/top_tlast_gen_0_0/top_tlast_gen_0_0_in_context.xdc] for cell 'top_i/tlast_gen_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_output_mux_0_0/top_output_mux_0_0/top_output_mux_0_0_in_context.xdc] for cell 'top_i/output_mux_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_output_mux_0_0/top_output_mux_0_0/top_output_mux_0_0_in_context.xdc] for cell 'top_i/output_mux_0'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_5_0/top_ila_5_0/top_ila_5_0_in_context.xdc] for cell 'top_i/ila_5'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_ila_5_0/top_ila_5_0/top_ila_5_0_in_context.xdc] for cell 'top_i/ila_5'
+Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_SampleControl_0_0/top_SampleControl_0_0/top_SampleControl_0_0_in_context.xdc] for cell 'top_i/SampleControl_0'
+Finished Parsing XDC File [c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_SampleControl_0_0/top_SampleControl_0_0/top_SampleControl_0_0_in_context.xdc] for cell 'top_i/SampleControl_0'
+Parsing XDC File [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc]
+WARNING: [Vivado 12-180] No cells matched 'top_i/SampleControl_0/inst/last_trig_r2_reg'. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:70]
+WARNING: [Vivado 12-180] No cells matched 'top_i/SampleControl_0/inst/last_trig_r1_reg'. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:71]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:72]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:73]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:74]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:75]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:76]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:77]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:78]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:79]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:80]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:82]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:84]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:85]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:86]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:87]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:88]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:89]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:90]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:91]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:92]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:93]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:94]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:95]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:96]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:97]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:98]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:99]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:100]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:101]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:102]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:103]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:104]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:105]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:106]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:107]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:108]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:109]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:110]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:111]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:112]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:113]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:114]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:115]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:116]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:117]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:118]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:119]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:120]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:121]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:122]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:123]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:124]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:125]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:126]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:127]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:128]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:129]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:130]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:131]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:132]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:133]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:134]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:135]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:136]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:137]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:138]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:139]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:140]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:141]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:142]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:143]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:144]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:145]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:146]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:147]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:148]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:149]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:150]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:151]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:152]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:153]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:154]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:155]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:156]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:157]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:158]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:159]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set load on pre-synthesized design.  Please open a synthesized design (or synthesize the current design) and rerun this command. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:160]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:170]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:170]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_0]'. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_0_clk_p'. [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc:177]
+Finished Parsing XDC File [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FPGA/NanoVTX/NanoVTX.srcs/constrs_1/new/constr1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1529.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1529.379 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '16.276', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1531.746 ; gain = 529.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1531.746 ; gain = 529.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_clk_hs_n_0. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_clk_hs_n_0. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_clk_hs_p_0. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_clk_hs_p_0. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_n_0[0]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_n_0[0]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_n_0[1]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_n_0[1]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_p_0[0]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_p_0[0]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_p_0[1]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_p_0[1]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0/top_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_ddr_vrn. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_ddr_vrn. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_ddr_vrp. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_ddr_vrp. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[0]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[0]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[10]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[10]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[11]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[11]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[12]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[12]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[13]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[13]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[14]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[14]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[15]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[15]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[16]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[16]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[17]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[17]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[18]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[18]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[19]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[19]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[1]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[1]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[20]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[20]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[21]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[21]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[22]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[22]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[23]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[23]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[24]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[24]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[25]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[25]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[26]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[26]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[27]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[27]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[28]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[28]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[29]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[29]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[2]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[2]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[30]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[30]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[31]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[31]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[32]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[32]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[33]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[33]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[34]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[34]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[35]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[35]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[36]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[36]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[37]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[37]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[38]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[38]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[39]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[39]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[3]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[3]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[40]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[40]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[41]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[41]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[42]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[42]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[43]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[43]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[44]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[44]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[45]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[45]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[46]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[46]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[47]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[47]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[48]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[48]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[49]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[49]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[4]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[4]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[50]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[50]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[51]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[51]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[52]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[52]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[53]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[53]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[5]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[5]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[6]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[6]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[7]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[7]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[8]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[8]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_mio[9]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_mio[9]. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_ps_clk. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_ps_clk. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_ps_porb. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_ps_porb. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_0_ps_srstb. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_0_ps_srstb. (constraint file  c:/FPGA/NanoVTX/NanoVTX.gen/sources_1/bd/top/ip/top_processing_system7_0_0/top_processing_system7_0_0/top_processing_system7_0_0_in_context.xdc, line 263).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_mem_intercon. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_register_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/fake_data_src_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/fft_config_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/fft_tdata_slice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/fifo_generator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/fifo_generator_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ila_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ila_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ila_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ila_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/mipi_csi2_rx_subsyst_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ps7_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ps7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/util_vector_logic_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/util_vector_logic_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/util_vector_logic_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xfft_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlconcat_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/constant_val1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/constant_val0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlslice_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xlslice_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/tlast_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/output_mux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/ila_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/SampleControl_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1531.746 ; gain = 529.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1531.746 ; gain = 529.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1531.746 ; gain = 529.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1533.422 ; gain = 531.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1533.422 ; gain = 531.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1533.422 ; gain = 531.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |top_auto_pc_0                |         1|
+|2     |top_auto_us_0                |         1|
+|3     |top_xbar_0                   |         1|
+|4     |top_auto_pc_1                |         1|
+|5     |top_auto_pc_2                |         1|
+|6     |top_auto_pc_3                |         1|
+|7     |top_auto_pc_4                |         1|
+|8     |top_SampleControl_0_0        |         1|
+|9     |top_axi_dma_0_0              |         1|
+|10    |top_axi_register_0_0         |         1|
+|11    |top_blk_mem_gen_0_0          |         1|
+|12    |top_fake_data_src_0_0        |         1|
+|13    |top_fft_config_0_0           |         1|
+|14    |top_fft_tdata_slice_0_0      |         1|
+|15    |top_fifo_generator_0_0       |         1|
+|16    |top_fifo_generator_1_0       |         1|
+|17    |top_ila_0_0                  |         1|
+|18    |top_ila_1_0                  |         1|
+|19    |top_ila_2_0                  |         1|
+|20    |top_ila_3_0                  |         1|
+|21    |top_ila_4_0                  |         1|
+|22    |top_ila_5_0                  |         1|
+|23    |top_mipi_csi2_rx_subsyst_0_0 |         1|
+|24    |top_output_mux_0_0           |         1|
+|25    |top_processing_system7_0_0   |         1|
+|26    |top_rst_ps7_0_50M_0          |         1|
+|27    |top_tlast_gen_0_0            |         1|
+|28    |top_util_vector_logic_0_0    |         1|
+|29    |top_util_vector_logic_1_0    |         1|
+|30    |top_util_vector_logic_2_0    |         1|
+|31    |top_util_vector_logic_3_0    |         1|
+|32    |top_xfft_1_0                 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |top_SampleControl_0        |     1|
+|2     |top_auto_pc                |     5|
+|7     |top_auto_us                |     1|
+|8     |top_axi_dma_0              |     1|
+|9     |top_axi_register_0         |     1|
+|10    |top_blk_mem_gen_0          |     1|
+|11    |top_fake_data_src_0        |     1|
+|12    |top_fft_config_0           |     1|
+|13    |top_fft_tdata_slice_0      |     1|
+|14    |top_fifo_generator_0       |     1|
+|15    |top_fifo_generator_1       |     1|
+|16    |top_ila_0                  |     1|
+|17    |top_ila_1                  |     1|
+|18    |top_ila_2                  |     1|
+|19    |top_ila_3                  |     1|
+|20    |top_ila_4                  |     1|
+|21    |top_ila_5                  |     1|
+|22    |top_mipi_csi2_rx_subsyst_0 |     1|
+|23    |top_output_mux_0           |     1|
+|24    |top_processing_system7_0   |     1|
+|25    |top_rst_ps7_0_50M          |     1|
+|26    |top_tlast_gen_0            |     1|
+|27    |top_util_vector_logic_0    |     1|
+|28    |top_util_vector_logic_1    |     1|
+|29    |top_util_vector_logic_2    |     1|
+|30    |top_util_vector_logic_3    |     1|
+|31    |top_xbar                   |     1|
+|32    |top_xfft_1                 |     1|
+|33    |IBUF                       |     6|
+|34    |IOBUF                      |     2|
+|35    |OBUF                       |    36|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1542.086 ; gain = 528.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.086 ; gain = 540.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1542.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1557.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Synth Design complete | Checksum: a0bd06
+INFO: [Common 17-83] Releasing license: Synthesis
+174 Infos, 221 Warnings, 91 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1557.789 ; gain = 932.129
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/FPGA/NanoVTX/NanoVTX.runs/synth_1/top_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_synth.rpt -pb top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 26 21:52:59 2023...
