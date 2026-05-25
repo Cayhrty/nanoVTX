@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="top_output_mux_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_output_mux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="blk_mem_gen_1_synth_1"/>
+		<Parent Id="blk_mem_gen_0_synth_1"/>
+	</Run>
+	<Run Id="blk_mem_gen_1_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/blk_mem_gen_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="blk_mem_gen_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/blk_mem_gen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_SampleControl_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_SampleControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_fft_tdata_slice_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_fft_tdata_slice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_axi_register_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_axi_register_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_fifo_generator_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_fifo_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_ila_1_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_blk_mem_gen_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_axi_dma_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_fft_config_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_fft_config_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_ila_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_fake_data_src_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_fake_data_src_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_fifo_generator_1_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_fifo_generator_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_util_vector_logic_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_ila_3_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_processing_system7_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_xfft_1_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_xfft_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_tlast_gen_0_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_tlast_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_util_vector_logic_1_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_util_vector_logic_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_rst_ps7_0_50M_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_rst_ps7_0_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_util_vector_logic_2_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_util_vector_logic_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="top_util_vector_logic_0_0_synth_1"/>
+	</Run>
+	<Run Id="top_util_vector_logic_3_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_util_vector_logic_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="top_util_vector_logic_0_0_synth_1"/>
+	</Run>
+	<Run Id="top_rst_ps7_0_50M1_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_rst_ps7_0_50M1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_ila_2_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_ila_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_xbar_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_auto_pc_1_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_auto_pc_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_auto_us_0_synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/top_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="top_output_mux_0_0_synth_1"/>
+		<Parent Id="blk_mem_gen_1_synth_1"/>
+		<Parent Id="blk_mem_gen_0_synth_1"/>
+		<Parent Id="top_SampleControl_0_0_synth_1"/>
+		<Parent Id="top_fft_tdata_slice_0_0_synth_1"/>
+		<Parent Id="top_axi_register_0_0_synth_1"/>
+		<Parent Id="top_fifo_generator_0_0_synth_1"/>
+		<Parent Id="top_ila_1_0_synth_1"/>
+		<Parent Id="top_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="top_axi_dma_0_0_synth_1"/>
+		<Parent Id="top_fft_config_0_0_synth_1"/>
+		<Parent Id="top_ila_0_0_synth_1"/>
+		<Parent Id="top_fake_data_src_0_0_synth_1"/>
+		<Parent Id="top_fifo_generator_1_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="top_ila_3_0_synth_1"/>
+		<Parent Id="top_processing_system7_0_0_synth_1"/>
+		<Parent Id="top_xfft_1_0_synth_1"/>
+		<Parent Id="top_tlast_gen_0_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_1_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_2_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_3_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_50M1_0_synth_1"/>
+		<Parent Id="top_ila_2_0_synth_1"/>
+		<Parent Id="top_xbar_0_synth_1"/>
+		<Parent Id="top_auto_pc_1_synth_1"/>
+		<Parent Id="top_auto_pc_0_synth_1"/>
+		<Parent Id="top_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/FPGA/NanoVTX/NanoVTX.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="top_output_mux_0_0_synth_1"/>
+		<Parent Id="blk_mem_gen_1_synth_1"/>
+		<Parent Id="blk_mem_gen_0_synth_1"/>
+		<Parent Id="top_SampleControl_0_0_synth_1"/>
+		<Parent Id="top_fft_tdata_slice_0_0_synth_1"/>
+		<Parent Id="top_axi_register_0_0_synth_1"/>
+		<Parent Id="top_fifo_generator_0_0_synth_1"/>
+		<Parent Id="top_ila_1_0_synth_1"/>
+		<Parent Id="top_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="top_axi_dma_0_0_synth_1"/>
+		<Parent Id="top_fft_config_0_0_synth_1"/>
+		<Parent Id="top_ila_0_0_synth_1"/>
+		<Parent Id="top_fake_data_src_0_0_synth_1"/>
+		<Parent Id="top_fifo_generator_1_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="top_ila_3_0_synth_1"/>
+		<Parent Id="top_processing_system7_0_0_synth_1"/>
+		<Parent Id="top_xfft_1_0_synth_1"/>
+		<Parent Id="top_tlast_gen_0_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_1_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_2_0_synth_1"/>
+		<Parent Id="top_util_vector_logic_3_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_50M1_0_synth_1"/>
+		<Parent Id="top_ila_2_0_synth_1"/>
+		<Parent Id="top_xbar_0_synth_1"/>
+		<Parent Id="top_auto_pc_1_synth_1"/>
+		<Parent Id="top_auto_pc_0_synth_1"/>
+		<Parent Id="top_auto_us_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
